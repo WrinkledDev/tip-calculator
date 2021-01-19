@@ -21,13 +21,13 @@
 
       if(bill.value === "" || people.value === "" || service.value === ""){
         if(bill.value === ""){
-          errorAmount.innerHTML = "Bill Amount Cannot Be Blank.";
+          errorAmount.innerHTML = "Bill Amount Field Can't Be Empty.";
         }
         if(people.value === ""){
-          errorPeople.innerHTML = "Number of Users Must Be Greater Than Zero. ";
+          errorPeople.innerHTML = "Diners Field Must Be Greater Than Zero. ";
         }
         if(service.value === ""){
-          errorService.innerHTML = "You must define the service quality. ";
+          errorService.innerHTML = "Service Quality Field Can't Be Empty. ";
         }
 
         setTimeout(showDiv, 200);

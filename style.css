@@ -43,7 +43,7 @@
   background-color: crimson;
   display: none;
   min-height: 100px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .error-message {
