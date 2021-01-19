@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="frame">
+      <div class="intro">
+        <h1 class="title">Tip Calculator</h1>
+      </div>
+      <div class="body">
+        <form class="form">
+          <div class="input-container bill">
+            <label for="bill">How Much Was Your Bill?</label>
+            <i class="fa fa-dollar-sign icon"></i>
+            <input type="number" id="bill" name="bill" min="0" step=".01" required>
+          </div>
+          <div class="input-container people">
+            <label for="people">How Many People Sharing the Bill?</label>
+            <i class="fa fa-user icon"></i>
+            <input type="number" id="people" name="bill" min="0" required>
+          </div>
+          <div class="input-container service">
+            <label for="service">How Was Your Service?</label>
+            <select name="service" id="service" required>
+              <option value="" disabled selected>Choose...</option>
+              <option value="0.2">Great - 20%</option>
+              <option value="0.1">Good - 10%</option>
+              <option value="0.05">Bad - 5%</option>
+            </select>
+          </div>
+          <button class="calculate">Calculate</button>
+        </form>
+        <div class="result body">
+          <!-- RESULT WILL GO HERE... -->
+          <p class="result-tip"></p>
+          <p class="result-total-bill"></p>
+          <p class="result-per-person"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

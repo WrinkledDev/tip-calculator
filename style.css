@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(252, 252, 252);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(38, 84, 124);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.title {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.body {
+  min-height: 90%;
+  background-color: rgb(6, 214, 160);
+  border-radius: 0px 0px 20px 20px;
+  padding-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.input-container label {
+  font-size: 1.5em;
+}
+
+.input-container input {
+  width: 100%;
+  height: 40px;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 10px;
+  padding-left: 50px;
+}
+
+.icon {
+  position: absolute;
+  padding: 12px;
+  top: 39px;
+  left: 0px;
+  background: #ef476f;
+  color: rgb(252, 252, 252);
+  font-size: 14px;
+  /* min-width: 50px; */
+  text-align: center;
+}
+
+.input-container #service {
+  font-size: 1.5em;
+  height: 40px;
+  color: black;
+  margin-top: 10px;
+}
+
+.input-container option {
+  color: black;
+}
+
+.calculate {
+  background-color: rgba(239, 71, 111, 0.95);
+  border: none;
+  color: rgb(252, 252, 252);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.calculate:hover {
+  background-color: rgba(239, 71, 111, 1);
+}
+
+.result {
+  display: none;
+  text-align: center;
+  font-size: 2em;
+}
