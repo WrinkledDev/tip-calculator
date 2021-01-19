@@ -8,10 +8,43 @@
     let result_tip = document.querySelector(".result-tip");
     let result_total_bill = document.querySelector(".result-total-bill");
     let result_per_person = document.querySelector(".result-per-person");
+    let error = document.querySelector(".error");
+    let errorAmount = document.querySelector(".error-amount");
+    let errorPeople = document.querySelector(".error-people");
+    let errorService = document.querySelector(".error-service");
 
     button.addEventListener('click', extractValues)
 
     function extractValues(e){
+
+      e.preventDefault();
+
+      if(bill.value === "" || people.value === "" || service.value === ""){
+        if(bill.value === ""){
+          errorAmount.innerHTML = "Bill Amount Cannot Be Blank.";
+        }
+        if(people.value === ""){
+          errorPeople.innerHTML = "Number of Users Must Be Greater Than Zero. ";
+        }
+        if(service.value === ""){
+          errorService.innerHTML = "You must define the service quality. ";
+        }
+
+        setTimeout(showDiv, 200);
+
+        function showDiv(){
+          error.style.display = "block";
+        }
+
+        setTimeout(hideDiv, 5000);
+
+        function hideDiv(){
+          error.style.display = "none";
+        }
+
+        errorMessage.innerHTML = message;
+
+      }
 
       let tip = parseFloat(bill.value) * parseFloat(service.value);
       let total_bill = parseFloat(bill.value) + tip;

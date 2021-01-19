@@ -15,20 +15,25 @@
         <h1 class="title">Tip Calculator</h1>
       </div>
       <div class="body">
+        <div class="error">
+          <p class="error-message error-amount"></p>
+          <p class="error-message error-people"></p>
+          <p class="error-message error-service"></p>
+        </div>
         <form class="form">
           <div class="input-container bill">
             <label for="bill">How Much Was Your Bill?</label>
             <i class="fa fa-dollar-sign icon"></i>
-            <input type="number" id="bill" name="bill" min="0" step=".01" required>
+            <input type="number" id="bill" name="bill" min="0" step=".01">
           </div>
           <div class="input-container people">
             <label for="people">How Many People Sharing the Bill?</label>
             <i class="fa fa-user icon"></i>
-            <input type="number" id="people" name="bill" min="0" required>
+            <input type="number" id="people" name="bill" min="1">
           </div>
           <div class="input-container service">
             <label for="service">How Was Your Service?</label>
-            <select name="service" id="service" required>
+            <select name="service" id="service">
               <option value="" disabled selected>Choose...</option>
               <option value="0.2">Great - 20%</option>
               <option value="0.1">Good - 10%</option>

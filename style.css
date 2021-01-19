@@ -38,6 +38,18 @@
   padding-bottom: 10px;
 }
 
+.error {
+  text-align: center;
+  background-color: crimson;
+  display: none;
+  min-height: 100px;
+  padding: 20px;
+}
+
+.error-message {
+  font-size: 1.5em;
+}
+
 .form {
   display: flex;
   flex-direction: column;
